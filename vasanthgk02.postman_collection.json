@@ -1,0 +1,791 @@
+{
+	"info": {
+		"_postman_id": "56dcf98a-0f09-40be-ba64-da5833fe5266",
+		"name": "vasanthgk02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32191257"
+	},
+	"item": [
+		{
+			"name": "restaurant_mangement",
+			"item": [
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\": \"Vasanth\",\n    \"last_name\": \"Kumar\",\n    \"email\": \"Vasanthgk02@gmail.com\",\n    \"password\": \"golang@2002\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/users/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"users",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\": \"Vasanth\",\n    \"last_name\": \"Kumar\",\n    \"email\": \"Vasanthgk02@gmail.com\",\n    \"password\": \"golang@2002\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "users",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/users?startIndex=0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"users"
+									],
+									"query": [
+										{
+											"key": "startIndex",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/users/687521ea5fe2d077ee75bfc1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"users",
+										"687521ea5fe2d077ee75bfc1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "table",
+					"item": [
+						{
+							"name": "tables",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/tables",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"tables"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tables/id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/tables/68752956591afb5161e4bf71",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"tables",
+										"68752956591afb5161e4bf71"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create table",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"number_of_guests\": 2,\n    \"tabe_number\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/tables",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"tables"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update table",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"number_of_guests\": 3,\n    \"tabe_number\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/tables/68752956591afb5161e4bf71",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"tables",
+										"68752956591afb5161e4bf71"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "food",
+					"item": [
+						{
+							"name": "foods",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/foods",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"foods"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "foods/id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/foods/687535205c140aafd8e707d3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"foods",
+										"687535205c140aafd8e707d3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create food",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Biriyani\",\n    \"price\":160.00,\n    \"food_image\":\"s3uri\",\n    \"menu_id\":\"687533fcaf0463eb3ea92540\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/foods",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"foods"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update food",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"food_image\":\"test_image_link\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/foods/687534e1af0463eb3ea92541",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"foods",
+										"687534e1af0463eb3ea92541"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "menu",
+					"item": [
+						{
+							"name": "menus",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/menus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"menus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "menus/id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/menus/687533f5af0463eb3ea9253f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"menus",
+										"687533f5af0463eb3ea9253f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create menu",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Non Veg\",\n    \"category\": \"gravy\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/menus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"menus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update menu",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Non Veg\",\n    \"category\": \"Main course\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/menus/687533f5af0463eb3ea9253f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"menus",
+										"687533f5af0463eb3ea9253f"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "order",
+					"item": [
+						{
+							"name": "orders",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Biriyani\",\n    \"price\":160.00,\n    \"food_image\":\"s3uri\",\n    \"menu_id\":\"687533fcaf0463eb3ea92540\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "orders/id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Biriyani\",\n    \"price\":160.00,\n    \"food_image\":\"s3uri\",\n    \"menu_id\":\"687533fcaf0463eb3ea92540\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/orders/68753d68c317736c99dc1269",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orders",
+										"68753d68c317736c99dc1269"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create order",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"table_id\":\"68752956591afb5161e4bf71\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8000/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update order",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"table_id\":\"68752a1798271fb8c2e37e42\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/orders/68753d68c317736c99dc1269",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orders",
+										"68753d68c317736c99dc1269"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "orderItem",
+					"item": [
+						{
+							"name": "orderItems",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/orderItems",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orderItems"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "orderItems/id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/orderItems/68754d1ef9ff3451fd2a6b1c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orderItems",
+										"68754d1ef9ff3451fd2a6b1c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create orderItem",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"table_id\":\"68752956591afb5161e4bf71\",\n    \"order_items\":[\n        {\n            \"food_id\":\"687535205c140aafd8e707d3\",\n            \"quantity\": \"S\"\n\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/orderItems",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orderItems"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update orderItem",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IlZhc2FudGhnazAyQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJWYXNhbnRoIiwiTGFzdF9uYW1lIjoiS3VtYXIiLCJVaWQiOiI2ODc1MjFlYTVmZTJkMDc3ZWU3NWJmYzEiLCJleHAiOjE3NTI1OTMyNTh9.ctAtXFPbAfiGBgDPAESKygNoH26SRDGwZ-ASFGStu4g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\":\"L\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/orderItems/6875447dd70f167d1d87cf5c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orderItems",
+										"6875447dd70f167d1d87cf5c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "orderItems-order",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
